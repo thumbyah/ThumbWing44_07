@@ -1,0 +1,14 @@
+
+if SHIELD_THUMBWING44_07_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "thumbwing44_07"
+
+endif
+
+if SHIELD_THUMBWING44_07_LEFT || SHIELD_THUMBWING44_07_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif

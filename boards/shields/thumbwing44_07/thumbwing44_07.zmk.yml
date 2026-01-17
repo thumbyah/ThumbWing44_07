@@ -1,0 +1,14 @@
+
+file_format: "1"
+id: thumbwing44_07
+name: thumbwing44_07
+type: shield
+features:
+  - keys
+  - studio
+outputs:
+  - usb
+  - ble
+siblings:
+  - thumbwing44_07_left
+  - thumbwing44_07_right

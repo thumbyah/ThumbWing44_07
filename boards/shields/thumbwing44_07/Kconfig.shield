@@ -1,0 +1,4 @@
+config SHIELD_THUMBWING44_07_LEFT
+    def_bool $(shields_list_contains,thumbwing44_07_left)
+config SHIELD_THUMBWING44_07_RIGHT
+    def_bool $(shields_list_contains,thumbwing44_07_right)
