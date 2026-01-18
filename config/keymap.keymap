@@ -16,13 +16,6 @@
             bindings = <&kp LS(C) &kp N0 &kp P &kp P &kp E &kp R &kp T &kp R &kp E &kp E &kp N7 &kp N4>;
             label = "PASS_COP";
         };
-
-        Win_Lock: Win_Lock {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LG(L)>;
-            label = "WIN_LOCK";
-        };
     };
 
     keymap {
