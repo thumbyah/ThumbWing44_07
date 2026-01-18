@@ -48,7 +48,7 @@
 
         layer_2 {
             bindings = <
-        &none      &none  &none   &none      &none                                      &none          &none              &kp LEFT_ARROW  &none     &none             &none
+        &none      &none  &none   &none      &none                                      &none          &none              &kp LEFT_ARROW  &bracket  &none             &none
 &trans  &none      &none  &none   &none      &ID                                        &kp COLON      &kp DOUBLE_QUOTES  &none           &none     &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &trans  &kp TILDE  &none  &none   &kp LG(L)  &Pass_Cop                                  &kp BACKSLASH  &none              &none           &kp SEMI  &kp LS(SQT)
                           &trans  &trans     &trans     &trans  &trans  &trans  &trans  &trans         &trans             &trans
