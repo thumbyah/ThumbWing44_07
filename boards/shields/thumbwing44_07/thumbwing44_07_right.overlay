@@ -22,26 +22,21 @@
 		col-offset = <8>;
     };
 
-    kscan0: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        wakeup-source;
-
-        diode-direction = "col2row";
-        row-gpios
-            = <&akdk_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 14 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-			,<&akdk_d 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+row-gpios
+            = <&akdk_d 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 0
+            , <&akdk_d 5 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 1 (14から5へ変更)
+            , <&akdk_d 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 2 (15から4へ変更)
+            , <&akdk_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>  // Row 3 (16から3へ変更)
             ;
         col-gpios
-            = <&akdk_d 13 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 12 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 11 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 10 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 8 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 7 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 6 GPIO_ACTIVE_HIGH>
-			,<&akdk_d 5 GPIO_ACTIVE_HIGH>
+            = <&akdk_d 14 GPIO_ACTIVE_HIGH> // Col 0 (13から14へ変更)
+            , <&akdk_d 13 GPIO_ACTIVE_HIGH> // Col 1 (12から13へ変更)
+            , <&akdk_d 12 GPIO_ACTIVE_HIGH> // Col 2 (11から12へ変更)
+            , <&akdk_d 11 GPIO_ACTIVE_HIGH> // Col 3 (10から11へ変更)
+            , <&akdk_d 10 GPIO_ACTIVE_HIGH> // Col 4 (8から10へ変更)
+            , <&akdk_d 8 GPIO_ACTIVE_HIGH>  // Col 5 (7から8へ変更)
+            , <&akdk_d 7 GPIO_ACTIVE_HIGH>  // Col 6 (6から7へ変更)
+            , <&akdk_d 6 GPIO_ACTIVE_HIGH>  // Col 7 (5から6へ変更)
             ;
     };
 
